@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96602F74-F65C-4827-9828-2CB0810E5296}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowFormsProject</RootNamespace>
+    <AssemblyName>WindowFormsProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjectDLL">
+      <HintPath>..\..\ProjectDLL\ProjectDLL\bin\Debug\ProjectDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConnectionString.cs" />
+    <Compile Include="ObjectHandler.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\AdminDeleteCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AdminDeleteCustomer.Designer.cs">
+      <DependentUpon>AdminDeleteCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AdminMenu.Designer.cs">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdminUpdateManagers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AdminUpdateManagers.Designer.cs">
+      <DependentUpon>AdminUpdateManagers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdminViewCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AdminViewCustomers.Designer.cs">
+      <DependentUpon>AdminViewCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdminViewFeedbacks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AdminViewFeedbacks.Designer.cs">
+      <DependentUpon>AdminViewFeedbacks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdminViewManagers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AdminViewManagers.Designer.cs">
+      <DependentUpon>AdminViewManagers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdminViewOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AdminViewOrders.Designer.cs">
+      <DependentUpon>AdminViewOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CustomerAddInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CustomerAddInformation.Designer.cs">
+      <DependentUpon>CustomerAddInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CustomerBuyTickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CustomerBuyTickets.Designer.cs">
+      <DependentUpon>CustomerBuyTickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CustomerDeleteAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CustomerDeleteAccount.Designer.cs">
+      <DependentUpon>CustomerDeleteAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CustomerGetReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CustomerGetReceipt.Designer.cs">
+      <DependentUpon>CustomerGetReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CustomerGiveFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CustomerGiveFeedback.Designer.cs">
+      <DependentUpon>CustomerGiveFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CustomerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CustomerMenu.Designer.cs">
+      <DependentUpon>CustomerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CustomerViewTickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CustomerViewTickets.Designer.cs">
+      <DependentUpon>CustomerViewTickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Main-Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Main-Menu.Designer.cs">
+      <DependentUpon>Main-Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MatchesManagerAddMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MatchesManagerAddMatch.Designer.cs">
+      <DependentUpon>MatchesManagerAddMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MatchesManagerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MatchesManagerMenu.Designer.cs">
+      <DependentUpon>MatchesManagerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MatchesManagerRemoveMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MatchesManagerRemoveMatch.Designer.cs">
+      <DependentUpon>MatchesManagerRemoveMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MatchesManagerUpdateSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MatchesManagerUpdateSchedule.Designer.cs">
+      <DependentUpon>MatchesManagerUpdateSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MatchesManagerViewMatches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MatchesManagerViewMatches.Designer.cs">
+      <DependentUpon>MatchesManagerViewMatches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SignIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SignIN.Designer.cs">
+      <DependentUpon>SignIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SignUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SignUP.Designer.cs">
+      <DependentUpon>SignUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TicketsManagerAddTickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\TicketsManagerAddTickets.Designer.cs">
+      <DependentUpon>TicketsManagerAddTickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TicketsManagerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\TicketsManagerMenu.Designer.cs">
+      <DependentUpon>TicketsManagerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TicketsManagerRemoveTickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\TicketsManagerRemoveTickets.Designer.cs">
+      <DependentUpon>TicketsManagerRemoveTickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TicketsManagerUpdatePrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\TicketsManagerUpdatePrice.Designer.cs">
+      <DependentUpon>TicketsManagerUpdatePrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TicketsManagerViewTickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\TicketsManagerViewTickets.Designer.cs">
+      <DependentUpon>TicketsManagerViewTickets.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\AdminDeleteCustomer.resx">
+      <DependentUpon>AdminDeleteCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AdminMenu.resx">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AdminUpdateManagers.resx">
+      <DependentUpon>AdminUpdateManagers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AdminViewCustomers.resx">
+      <DependentUpon>AdminViewCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AdminViewFeedbacks.resx">
+      <DependentUpon>AdminViewFeedbacks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AdminViewManagers.resx">
+      <DependentUpon>AdminViewManagers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AdminViewOrders.resx">
+      <DependentUpon>AdminViewOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CustomerAddInformation.resx">
+      <DependentUpon>CustomerAddInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CustomerBuyTickets.resx">
+      <DependentUpon>CustomerBuyTickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CustomerDeleteAccount.resx">
+      <DependentUpon>CustomerDeleteAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CustomerGetReceipt.resx">
+      <DependentUpon>CustomerGetReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CustomerGiveFeedback.resx">
+      <DependentUpon>CustomerGiveFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CustomerMenu.resx">
+      <DependentUpon>CustomerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CustomerViewTickets.resx">
+      <DependentUpon>CustomerViewTickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Main-Menu.resx">
+      <DependentUpon>Main-Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MatchesManagerAddMatch.resx">
+      <DependentUpon>MatchesManagerAddMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MatchesManagerMenu.resx">
+      <DependentUpon>MatchesManagerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MatchesManagerRemoveMatch.resx">
+      <DependentUpon>MatchesManagerRemoveMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MatchesManagerUpdateSchedule.resx">
+      <DependentUpon>MatchesManagerUpdateSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MatchesManagerViewMatches.resx">
+      <DependentUpon>MatchesManagerViewMatches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SignIN.resx">
+      <DependentUpon>SignIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SignUP.resx">
+      <DependentUpon>SignUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TicketsManagerAddTickets.resx">
+      <DependentUpon>TicketsManagerAddTickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TicketsManagerMenu.resx">
+      <DependentUpon>TicketsManagerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TicketsManagerRemoveTickets.resx">
+      <DependentUpon>TicketsManagerRemoveTickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TicketsManagerUpdatePrice.resx">
+      <DependentUpon>TicketsManagerUpdatePrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TicketsManagerViewTickets.resx">
+      <DependentUpon>TicketsManagerViewTickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black Eagle Logo .png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
